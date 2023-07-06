@@ -1,0 +1,14 @@
+version: "3"
+services:
+  django:
+    image: django
+    container_name: django
+    command: >
+      bash -c "pip install -r requirements.txt && python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - ./:/usr/src/app
+      - ./requirements.txt:/requirements.txt
+      - ./manage.py:/manage.py
+    working_dir: /usr/src/app
+    ports:
+      - "8000:8000"
