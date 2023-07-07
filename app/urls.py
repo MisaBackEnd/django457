@@ -15,11 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from app.test import remote_list
-from app.test import local_list
+from app.test import index
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url('remote/list', remote_list),
-    url('local/list', local_list)
+    url('', index),
 ]

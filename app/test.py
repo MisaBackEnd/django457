@@ -1,8 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse 
+from django.http import JsonResponse
+import requests
 
-def remote_list(request):
-    return HttpResponse('remote is running')
-
-def local_list(request):
-    return HttpResponse('local is running')
+def index(request):
+    return HttpResponse('is running')
