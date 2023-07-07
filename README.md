@@ -10,11 +10,11 @@ an endpoint that have Basic Auth, your task are:
     "usage": "{usage}",  
     "desc": "{desc}"  
    },  
-    ...  
-    ..  
-    .  
+   ...  
+   ..  
+   .  
 }     
 ```
-4- Push the code to an public repository  
+4- Push the code
   
 Regards  
