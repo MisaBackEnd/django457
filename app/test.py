@@ -35,6 +35,7 @@ def index(request):
     print(order_data)
     order_final = list(order_data.keys())
     order_final.sort()
-    frameworks = { v:{"usage":"{} %".format(k), "desc":desc[v]} for i,k in enumerate(order_final)}
+    print(order_final)
+    frameworks = { order_data[k]:{"usage":"{} %".format(k), "desc":desc[order_data[k]]} for i,k in enumerate(order_final)}
     # return HttpResponse(res.status_code)
     return JsonResponse(frameworks)
